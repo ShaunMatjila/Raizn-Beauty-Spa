@@ -16,6 +16,10 @@ const ADMIN_COLLECTION = "admins";
 // Create or update admin profile in Firestore
 export const createAdminProfile = async (userId, adminData) => {
   try {
+    if (!db) {
+      throw new Error('Firebase is not configured');
+    }
+    
     const adminRef = doc(db, ADMIN_COLLECTION, userId);
 
     const profileData = {
@@ -49,6 +53,10 @@ export const createAdminProfile = async (userId, adminData) => {
 // Get admin profile by user ID
 export const getAdminProfile = async (userId) => {
   try {
+    if (!db) {
+      throw new Error('Firebase is not configured');
+    }
+    
     const adminRef = doc(db, ADMIN_COLLECTION, userId);
     const adminSnap = await getDoc(adminRef);
 
@@ -102,6 +110,10 @@ export const updateLastLogin = async (userId) => {
 // Check if user is admin by email
 export const checkAdminByEmail = async (email) => {
   try {
+    if (!db) {
+      throw new Error('Firebase is not configured');
+    }
+    
     const adminsRef = collection(db, ADMIN_COLLECTION);
     const q = query(
       adminsRef,

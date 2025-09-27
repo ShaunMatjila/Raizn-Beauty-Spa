@@ -24,6 +24,11 @@ export function AuthProvider({ children }) {
   // Firebase Authentication implementation with Firestore profile
   const login = async (email, password) => {
     try {
+      // Check if Firebase is available
+      if (!auth) {
+        throw new Error('Firebase is not configured');
+      }
+      
       console.log("Attempting Firebase login:", { email });
 
       // First sign in with Firebase Auth
@@ -121,6 +126,12 @@ export function AuthProvider({ children }) {
   };
 
   useEffect(() => {
+    // Only set up auth listener if Firebase is available
+    if (!auth) {
+      setIsLoading(false);
+      return;
+    }
+
     // Listen for Firebase auth state changes
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       console.log("Auth state changed:", user?.email || "No user");
