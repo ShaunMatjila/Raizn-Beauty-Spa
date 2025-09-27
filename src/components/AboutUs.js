@@ -38,7 +38,7 @@ export default function AboutUs() {
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                More than a beauty destination, we're a community that celebrates
+                More than a beauty destination, we&apos;re a community that celebrates
                 self-care as self-love. Every service is designed to help you look
                 and feel your absolute best.
               </p>
