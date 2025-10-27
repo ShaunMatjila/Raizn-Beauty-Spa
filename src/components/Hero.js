@@ -28,9 +28,9 @@ export default function Hero() {
           <span className="text-xs sm:text-sm font-medium text-white/90 uppercase tracking-wider mb-4 sm:mb-6 block">
             Welcome to RAIZN Beauty Spa
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-snug sm:leading-tight">
-            Beauty is Your Best <br />
-            Investment
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-6 leading-snug sm:leading-tight">
+            Beauty Is Your Best <br />
+            <span className="text-primary">Investment</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-2xl leading-relaxed mb-6 sm:mb-8">
             Step into a world where self-care meets sophistication. Our expert
@@ -42,7 +42,7 @@ export default function Hero() {
             <Button
               asChild
               size="xl"
-              className="px-6 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 font-semibold"
+              className="px-6 py-3 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
             >
               <a href="#booking">Book Your Appointment</a>
             </Button>
@@ -63,20 +63,32 @@ export default function Hero() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-6 max-w-3xl">
             <Card className="bg-white/10 backdrop-blur-md border-white/20 shadow-md">
               <CardContent className="flex flex-col items-center p-4 sm:p-6">
-                <span className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">5k+</span>
-                <span className="text-xs sm:text-sm text-white/80">Happy Clients</span>
+                <span className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">
+                  5k+
+                </span>
+                <span className="text-xs sm:text-sm text-white/80">
+                  Happy Clients
+                </span>
               </CardContent>
             </Card>
             <Card className="bg-white/10 backdrop-blur-md border-white/20 shadow-md">
               <CardContent className="flex flex-col items-center p-4 sm:p-6">
-                <span className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">4.9</span>
-                <span className="text-xs sm:text-sm text-white/80">Customer Rating</span>
+                <span className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">
+                  4.9
+                </span>
+                <span className="text-xs sm:text-sm text-white/80">
+                  Customer Rating
+                </span>
               </CardContent>
             </Card>
             <Card className="bg-white/10 backdrop-blur-md border-white/20 shadow-md">
               <CardContent className="flex flex-col items-center p-4 sm:p-6">
-                <span className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">5+</span>
-                <span className="text-xs sm:text-sm text-white/80">Years Experience</span>
+                <span className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">
+                  5+
+                </span>
+                <span className="text-xs sm:text-sm text-white/80">
+                  Years Experience
+                </span>
               </CardContent>
             </Card>
           </div>

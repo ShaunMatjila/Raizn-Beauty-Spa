@@ -12,7 +12,7 @@ export default function ServicesNavbar() {
         <div className="bg-white backdrop-blur-lg border border-white/30 rounded-xl px-6 py-2.5 flex justify-between items-center shadow-lg">
           {/* Logo / Brand */}
           <Link href="/" className="flex items-center space-x-3">
-            <span className="font-semibold text-xl text-green-600 tracking-tight">
+            <span className="font-semibold text-xl text-primary tracking-tight">
               Raizn Beauty Spa
             </span>
           </Link>
@@ -22,7 +22,7 @@ export default function ServicesNavbar() {
             <Link
               href="/login"
               onClick={(e) => e.preventDefault()}
-              className="bg-green-600 text-white px-4 py-2.5 rounded-xl transition-colors duration-200 text-sm font-medium shadow-sm opacity-50 cursor-not-allowed"
+              className="bg-primary text-white px-4 py-2.5 rounded-xl transition-colors duration-200 text-sm font-medium shadow-sm opacity-50 cursor-not-allowed"
             >
               Login
             </Link>
@@ -79,7 +79,7 @@ export default function ServicesNavbar() {
                   e.preventDefault();
                   setIsMobileMenuOpen(false);
                 }}
-                className="bg-green-600 text-white px-6 py-2.5 rounded-xl transition-colors duration-200 text-sm font-medium shadow-sm text-center opacity-50 cursor-not-allowed"
+                className="bg-primary text-white px-6 py-2.5 rounded-xl transition-colors duration-200 text-sm font-medium shadow-sm text-center opacity-50 cursor-not-allowed"
               >
                 Login
               </Link>

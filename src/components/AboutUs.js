@@ -6,15 +6,15 @@ import Image from "next/image";
 export default function AboutUs() {
 
   return (
-    <section id="about" className="py-16 sm:py-20 lg:py-24 bg-white">
+    <section id="about" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white to-primary/5">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             {/* Main Heading */}
             <div className="space-y-4">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Our Story
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+                Our <span className="text-primary">Story</span>
               </h2>
               <p className="text-xl text-gray-600 font-semibold">
                 Where Beauty Meets Expertise
@@ -47,9 +47,9 @@ export default function AboutUs() {
 
           {/* Right Column - Image with Overlay */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl h-96 lg:h-[500px]">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl h-96 lg:h-[500px]">
               <Image
-                src="/about.webp"
+                src="/about_.webp"
                 alt="Spa Interior"
                 fill
                 className="object-cover"
@@ -85,7 +85,7 @@ export default function AboutUs() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 93.2 100.2"
-                  className="mx-auto mb-4 w-16 h-16 text-green-600"
+                  className="mx-auto mb-4 w-16 h-16 text-primary"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -127,7 +127,7 @@ export default function AboutUs() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 93.2 100.2"
-                  className="mx-auto mb-4 w-16 h-16 text-green-600"
+                  className="mx-auto mb-4 w-16 h-16 text-primary"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -161,7 +161,7 @@ export default function AboutUs() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 93.2 100.2"
-                  className="mx-auto mb-4 w-16 h-16 text-green-600"
+                  className="mx-auto mb-4 w-16 h-16 text-primary"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -199,7 +199,7 @@ export default function AboutUs() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 34.8 34.8"
-                  className="mx-auto mb-4 w-16 h-16 text-green-600"
+                  className="mx-auto mb-4 w-16 h-16 text-primary"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"

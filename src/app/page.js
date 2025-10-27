@@ -9,8 +9,8 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 export default function Home() {
   return (
     <main className="relative">
-      <Hero />
       <Navbar />
+      <Hero />
       <Services />
       <AboutUs />
       <ContactUs />
